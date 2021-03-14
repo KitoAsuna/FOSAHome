@@ -4,4 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="676dp"
+        app:layout_constraintBottom_toTopOf="@+id/fosa_tab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/fosa_tab"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        android:orientation="horizontal">
+<!--        <RadioButton-->
+<!--            android:id="@+id/fosa_main"-->
+<!--            style="@style/Custom.TabRadioButton"-->
+<!--            android:checked="true"-->
+<!--            android:text="FOSA"-->
+<!--            />-->
+<!--        <RadioButton-->
+<!--            android:id="@+id/fosa_me"-->
+<!--            style="@style/Custom.TabRadioButton"-->
+<!--            android:checked="true"-->
+<!--            -->
+<!--            />-->
+
+        <RadioButton
+            android:id="@+id/fosa_main"
+            style="@style/Custom.TabRadioButton"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/fosa_me"
+            style="@style/Custom.TabRadioButton"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

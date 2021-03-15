@@ -24,23 +24,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="16dp"
         android:orientation="horizontal">
-<!--        <RadioButton-->
-<!--            android:id="@+id/fosa_main"-->
-<!--            style="@style/Custom.TabRadioButton"-->
-<!--            android:checked="true"-->
-<!--            android:text="FOSA"-->
-<!--            />-->
-<!--        <RadioButton-->
-<!--            android:id="@+id/fosa_me"-->
-<!--            style="@style/Custom.TabRadioButton"-->
-<!--            android:checked="true"-->
-<!--            -->
-<!--            />-->
 
         <RadioButton
             android:id="@+id/fosa_main"
             style="@style/Custom.TabRadioButton"
-            android:text="RadioButton" />
+            android:text="RadioButton"
+            />
 
         <RadioButton
             android:id="@+id/fosa_me"

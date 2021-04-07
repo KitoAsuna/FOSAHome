@@ -13,7 +13,9 @@
         app:layout_constraintBottom_toTopOf="@+id/fosa_tab"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </FrameLayout>
 
     <RadioGroup
         android:id="@+id/fosa_tab"
@@ -28,13 +30,18 @@
         <RadioButton
             android:id="@+id/fosa_main"
             style="@style/Custom.TabRadioButton"
-            android:text="RadioButton"
-            />
+            android:drawableTop="@drawable/tab_main_selector"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_addfood" />
 
         <RadioButton
             android:id="@+id/fosa_me"
             style="@style/Custom.TabRadioButton"
-            android:text="RadioButton" />
+            android:drawableTop="@drawable/tab_me_selector"/>
     </RadioGroup>
 
 
